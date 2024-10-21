@@ -1,89 +1,91 @@
 body {
-    background: linear-gradient(to bottom, #0077cc 0%, #004d80 100%); /* Gradient for a lake-like feel */
-    font-family: 'Verdana', sans-serif; /* Classic 2000s font */
-    color: #f0f8ff; /* Soft light color for text */
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Verdana', sans-serif;
+    color: #f0f8ff;
     margin: 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: center;
 }
 
 .container {
-    max-width: 800px; /* Set a max width for the container */
-    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background for contrast */
-    border-radius: 15px; /* Rounded corners */
-    padding: 30px; /* Add padding inside the container */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
-    backdrop-filter: blur(15px); /* Stronger blur effect for a cozy feel */
-    border: 2px solid rgba(255, 255, 255, 0.5); /* Soft border for definition */
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 h1 {
-    font-size: 3rem; /* Larger font size for the main heading */
-    margin-bottom: 20px; /* Add space below the heading */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow for a cozy effect */
-    font-weight: bold; /* Bold font for emphasis */
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
 }
 
 h2 {
-    font-size: 2rem; /* Slightly smaller font for secondary headings */
-    margin: 15px 0; /* Space above and below h2 */
-    color: #ffe600; /* Soft yellow for secondary headings */
+    font-size: 2rem;
+    margin: 15px 0;
+    color: #ffe600;
 }
 
 p {
-    font-size: 1.4rem; /* Base font size */
-    line-height: 1.6; /* Increase line height for readability */
-    margin-bottom: 30px; /* Space below paragraphs */
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 a {
-    color: #ffcc00; /* Soft yellow for links */
+    color: #ffcc00;
     text-decoration: none;
-    font-weight: bold; /* Make links stand out */
-    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:hover {
-    color: #ffe600; /* Lighter yellow on hover */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+    color: #ffe600;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
 }
 
 ul {
-    list-style-type: none; /* Remove bullet points from lists */
-    padding: 0; /* Remove padding */
+    list-style-type: none;
+    padding: 0;
 }
 
 ul li {
-    margin: 10px 0; /* Space between list items */
+    margin: 10px 0;
 }
 
 footer {
-    margin-top: 30px; /* Space above footer */
-    font-size: 1rem; /* Slightly larger font for footer */
-    color: #e0e0e0; /* Light gray for footer text */
-    text-align: center; /* Center the footer text */
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-align: center;
 }
 
-/* Add a gentle animation to links */
+
 a {
-    position: relative; /* Set position for animation effect */
+    position: relative;
 }
 
 a:after {
-    content: ''; /* Create a pseudo-element for the underline effect */
+    content: '';
     display: block;
-    width: 0; /* Start with no width */
-    height: 2px; /* Height of the underline */
-    background: #ffe600; /* Color of the underline */
-    transition: width 0.3s; /* Smooth transition for the underline */
-    position: absolute; /* Position it relative to the link */
-    bottom: -2px; /* Position it just below the link */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Adjust to center */
+    width: 0;
+    height: 2px;
+    background: #ffe600;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 a:hover:after {
-    width: 100%; /* Expand to full width on hover */
-}
+    width: 100%;
