@@ -1,44 +1,49 @@
 body {
-    background-color: #005fa3; /* Darker shade of blue for less strain */
-    font-family: 'Arial', sans-serif;
-    color: #ffffff; /* Use a softer white */
+    background: linear-gradient(to bottom, #0077cc 0%, #004d80 100%); /* Gradient for a lake-like feel */
+    font-family: 'Verdana', sans-serif; /* Classic 2000s font */
+    color: #f0f8ff; /* Soft light color for text */
     margin: 0;
-    padding: 20px; /* Add some padding to the body */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
 }
 
 .container {
-    text-align: center;
-    margin: 50px auto; /* Center the container and give it a margin */
     max-width: 800px; /* Set a max width for the container */
-    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background for contrast */
-    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background for contrast */
+    border-radius: 15px; /* Rounded corners */
     padding: 20px; /* Add padding inside the container */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+    backdrop-filter: blur(10px); /* Blur effect for a cozy feel */
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px; /* Add some space below the heading */
+    font-size: 2.8rem;
+    margin-bottom: 20px; /* Add space below the heading */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for a cozy effect */
 }
 
 p {
-    font-size: 1.2rem;
-    line-height: 1.5; /* Increase line height for readability */
-    margin-bottom: 30px; /* Add some space below paragraphs */
+    font-size: 1.4rem;
+    line-height: 1.6; /* Increase line height for readability */
+    margin-bottom: 30px; /* Space below paragraphs */
 }
 
 a {
-    color: #ffcc00; /* Softer yellow for links */
+    color: #ffcc00; /* Soft yellow for links */
     text-decoration: none;
     font-weight: bold; /* Make links stand out */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 a:hover {
-    text-decoration: underline;
     color: #ffe600; /* Lighter yellow on hover */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
 }
 
-/* Add a transition effect for links */
-a {
-    transition: color 0.3s ease, text-decoration 0.3s ease;
+footer {
+    margin-top: 30px; /* Space above footer */
+    font-size: 0.9rem; /* Smaller font for footer */
+    color: #e0e0e0; /* Light gray for footer text */
 }
